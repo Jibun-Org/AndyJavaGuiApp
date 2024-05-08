@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class CookieClicker extends JFrame {
+public class MainFrame extends JFrame {
     private JButton cookieButton;
     private JLabel clickCountLabel;
     private int clickCount;
 
-    public CookieClicker() {
+    public MainFrame() {
         setTitle("Cookie Clicker");
         setSize(300, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -17,7 +17,7 @@ public class CookieClicker extends JFrame {
 
         // Cookie button
         cookieButton = new JButton();
-        ImageIcon cookieIcon = new ImageIcon("images\\cookie_PNG13704.png"); 
+        ImageIcon cookieIcon = new ImageIcon("images\\cookie_PNG13704.png");
         cookieButton.setIcon(cookieIcon);
         cookieButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -37,7 +37,7 @@ public class CookieClicker extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new CookieClicker();
+                new MainFrame();
             }
         });
     }
