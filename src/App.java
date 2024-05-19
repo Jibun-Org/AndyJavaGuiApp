@@ -17,7 +17,7 @@ public class App extends JFrame {
 
         // Cookie button
         cookieButton = new JButton();
-        ImageIcon cookieIcon = new ImageIcon("images//cookie.png"); // Change path if needed
+        ImageIcon cookieIcon = new ImageIcon("images//cookie_PNG13704.png"); // Change path if needed
         cookieButton.setIcon(cookieIcon);
         cookieButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
